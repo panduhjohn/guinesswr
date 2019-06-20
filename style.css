@@ -1,5 +1,5 @@
 * { 
-	margin: 0; 
+	margin: 10; 
     box-sizing: border-box; 
     
 }
@@ -106,33 +106,35 @@ p {
 /*---------------------------------*/
 .main {
     /* background-color: green; */
-    /* display: grid; */
+    /* display: flex; */
     grid-area: main; /* <-------- why isnt it working?*/
+ 
 }
 
 .main li {
     font-size: 18px;
     list-style: none;
     color: white;
+    align-content: center;    
 }
 
 .main p {
     color: greenyellow;
     font-family: sans-serif;
     font-size: 20px;
-    text-decoration: orange;
-    
+    text-decoration: orange;  
 }
 
-.main h3 {
+.main h2 {
     color: white;
     font-family: sans-serif;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 #guiness {
     height: 200px;
     width: 200px;
+    justify-content: center;
 }
 
 /*---------------------------------*/

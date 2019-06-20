@@ -5,17 +5,18 @@
 }
 body {
     background-color: green;
+    color: blue;
 }
 .container {
     background-color: blue;
-    display: grid;
+    /* display: grid;
     grid-template-areas:
     "header header header"
     "about main ads"
     "about main main ads"
     "about main main ads"
     "footer footer footer"
-    ;
+    ; */
 }
 
 .menu {
@@ -23,13 +24,14 @@ body {
     height: 500px;
     width: 200px;
 }
+
 p {
     font-family: sans-serif;
     text-decoration: none;
     font-size: 15px;
     color: green;
-    
 }
+
 .main {
     background-color: green;
     display: grid;
@@ -70,7 +72,7 @@ p {
 }
 
 
-.menu {
+/* .menu {
   grid-area: header;
   background-color: red;
   display: grid;
@@ -86,4 +88,24 @@ p {
   grid-area: ads;
   background-color: orange;
   display: grid;
+} */
+
+img {
+    height: 100px;
+    width: 100px;
+}
+
+.testing {
+    background-color: blue;
+    border: 1px solid black;
+}
+
+.bullshit {
+    font-size: 50px;
+    border: 1px solid black;
+
+}
+
+.bullshit h3 {
+    color: blue;
 }

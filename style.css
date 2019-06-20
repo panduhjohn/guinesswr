@@ -1,0 +1,89 @@
+* { 
+	margin: 0; 
+    box-sizing: border-box; 
+
+}
+body {
+    background-color: green;
+}
+.container {
+    background-color: blue;
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "about main ads"
+    "about main main ads"
+    "about main main ads"
+    "footer footer footer"
+    ;
+}
+
+.menu {
+    background-color: blue;
+    height: 500px;
+    width: 200px;
+}
+p {
+    font-family: sans-serif;
+    text-decoration: none;
+    font-size: 15px;
+    color: green;
+    
+}
+.main {
+    background-color: green;
+    display: grid;
+}
+
+.main li {
+    font-size: 50px;
+    color: red;
+}
+
+#guiness {
+    height: 50px;
+    width: 100px;
+}
+
+#codeimm img {
+    height: 50px;
+    width: 100px;
+}
+#codeimm {
+    height: 50px;
+    width: 100px;
+}
+
+#filmacademy {
+    height: 100px;
+    width: 100px;
+}
+
+#gopro {
+    height: 100px;
+    width: 100px;
+}
+
+.liquid {
+    height: 200px;
+    width: 100px;
+}
+
+
+.menu {
+  grid-area: header;
+  background-color: red;
+  display: grid;
+}
+
+.main {
+  grid-area: footer;
+  background-color: green;
+  display: grid;
+}
+
+.sponsors {
+  grid-area: ads;
+  background-color: orange;
+  display: grid;
+}

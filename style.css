@@ -5,8 +5,16 @@
 body {
     /* background-color: green; */
     /* color: blue; */
+    display: grid;
     background-image: url(https://images.pexels.com/photos/54098/us-army-soldiers-army-men-54098.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
     background-position: center top; 
+    grid-template-areas:
+    "header header header header"
+    "menu menu menu menu"
+    "menu menu menu menu"
+    "menu menu menu menu"
+    "footer footer footer footer"
+    ; 
 }
 header {
     background: url('/assets/flagheader.jpg');
@@ -23,27 +31,39 @@ header {
     /* background-size: contain; */
     /* background-repeat: no-repeat; */
     background-size: 100% 400px;
+    /* display: grid; */
+    grid-area: header;
     
 }
+
+
 header .overlay{
 	width: 100%;
 	height: 100%;
-	color: black;
+    color: black;
+    
 }
 
 .container {
     /* background-color: blue; */
-    /* display: grid;
+    /* display: grid; */
+    grid-area: menu;
+    display: grid;
+    background-color: aqua;
     grid-template-areas:
-    "header header header"
-    "about main ads"
-    "about main main ads"
-    "about main main ads"
-    "footer footer footer"
-    ; */
+    
+    "left main main right"
+    "left main main right"
+    "left main main right"
+    ; 
+     
+
+
 }
+/*---------------------------------*/
 
 .menu {
+    
     /* background-color: blue; */
     display: flex;
     justify-content: space-around;
@@ -55,7 +75,10 @@ header .overlay{
     /* text-decoration: none; */
     /* height: 200px; */
     width: 100%;
-    height: 50px;
+    height: 100%;
+    /* display: grid; */
+    grid-area: left;
+    flex-direction: column;
 
 }
 
@@ -76,24 +99,66 @@ p {
     text-decoration: none;
     font-size: 14px;
 }
-
+/*---------------------------------*/
 .main {
     /* background-color: green; */
-    display: grid;
+    /* display: grid; */
+    grid-area: main; /* <-------- why isnt it working?*/
 }
 
 .main li {
     font-size: 18px;
     list-style: none;
     color: white;
+}
 
+.main p {
+    color: greenyellow;
+    font-family: sans-serif;
+    font-size: 20px;
+    text-decoration: orange;
+    
+}
+
+.main h3 {
+    color: white;
+    font-family: sans-serif;
+    font-size: 20px;
 }
 
 #guiness {
     height: 200px;
     width: 200px;
 }
+.sponsors{
+   grid-area: right;
+    
+}
+/*---------------------------------*/
+.support {
+    /* display: grid; */
+    grid-area: ads;  /* <-------- why isnt it working?*/
+}
+.support h3 {
+    color: white;
+}
 
+#vets img {
+    height: 400px;
+    width: 400px;
+}
+
+#kids img {
+    height: 200px;
+    width: 400px;
+}
+
+#dogs img {
+    height: 320px;
+    width: 600px;
+}
+
+/*---------------------------------*/
 #codeimm img {
     height: 80px;
     width: 200px;
@@ -126,7 +191,39 @@ p {
     height: 100px;
     width: 200px;
 }
+/*---------------------------------*/
+footer {
+    display: grid;
+    background-color: BLUE;
+    grid-area: footer;
+}
 
+/*---------------------------------*/
+
+@media only screen and (max-width: 800px) {
+  body {
+    background-color: blueviolet;
+    margin: 5px;
+  }
+  
+}
+
+@media only screen and (max-width: 400px) {
+  body {
+    background-color: greenyellow;
+    margin: 5px;
+  }
+}
+
+/* Landscape for Iphone X, since I own one.*/
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) 
+  { 
+    background-color: greenyellow; ????????
+}
 
 /* .menu {
   grid-area: header;

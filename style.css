@@ -1,5 +1,5 @@
 * { 
-	margin: 5px; 
+	margin: 0; 
     box-sizing: border-box; 
 }
 body {
@@ -12,11 +12,13 @@ header {
 	width: 100%;
 	height: 400px;
 	background-size: 100%;
-	/* position: relative; */
+	position: relative;
 	overflow: hidden;
     border-radius: 0 0 80% 80% / 30%;
-    text-shadow: 10px 10px 10px gray;
-    background-size: contain;
+    text-shadow: 5px 5px 5px white;
+    /* background-size: contain; */
+    /* background-repeat: no-repeat; */
+    background-size: 100% 400px;
     
 }
 header .overlay{
@@ -41,22 +43,34 @@ header .overlay{
 
 .menu {
     /* background-color: blue; */
-    height: 500px;
-    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    /* align-items: center; */
+    align-content: left;
+    align-items: left;
+    color: black;
+    /* text-decoration: none; */
+    /* height: 200px; */
+    width: 100%;
+    height: 50px;
 
 }
 
 .menu p {
-    color: orange;
-    font-size: 16px;
+    font-size: 26px;
     font-family: sans-serif;
 }
 
-p {
-    font-family: sans-serif;
+.menu a {
     text-decoration: none;
-    font-size: 15px;
-    color: green;
+}
+
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    font-size: 14px;
 }
 
 .main {
@@ -65,41 +79,42 @@ p {
 }
 
 .main li {
-    font-size: 50px;
-    color: red;
+    font-size: 18px;
+    list-style: none;
+
 }
 
 #guiness {
     height: 200px;
-    width: 400px;
+    width: 200px;
 }
 
 #codeimm img {
-    height: 50px;
-    width: 100px;
-}
-#codeimm {
-    height: 50px;
-    width: 100px;
+    height: 80px;
+    width: 200px;
 }
 
-#filmacademy {
+#filmacademy img {
+    height: 75px;
+    width: 200px;
+}
+
+#gopro img {
     height: 100px;
-    width: 100px;
+    width: 200px;
 }
 
-#gopro {
+#liquid img {
     height: 100px;
-    width: 100px;
+    width: 200px;
 }
-
-.liquid {
-    height: 200px;
-    width: 100px;
+#redbull img {
+    width: 200px;
+    height: 100px;
 }
-.redbull img {
-    width: 600px;
-    height: 200px;
+#yourlogo img {
+    width: 200px;
+    height: 100px;
 }
 
 

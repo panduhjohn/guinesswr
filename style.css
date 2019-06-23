@@ -1,23 +1,25 @@
 * { 
 	margin: 10; 
     box-sizing: border-box; 
+
     
 }
 body {
-    /* background-color: green; */
     /* color: blue; */
     display: grid;
-    background-image: url(https://images.pexels.com/photos/54098/us-army-soldiers-army-men-54098.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background-image: url(https://images.unsplash.com/photo-1522930600316-3fbc21b657b4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3294&q=80);
     background-position: center top; 
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    /* background-size: auto; */
+    /* background-attachment: fixed; */
     grid-template-areas:
     "header header header header"
     "menu menu menu menu"
     "menu menu menu menu"
     "menu menu menu menu"
     "footer footer footer footer"
-    ; 
+    ;
+     
 }
 header {
     background: url('/assets/flagheader.jpg');
@@ -34,7 +36,7 @@ header {
     /* background-size: contain; */
     /* background-repeat: no-repeat; */
     background-size: 100% 400px;
-    /* display: grid; */
+    display: grid;
     grid-area: header;
     
 }
@@ -89,7 +91,7 @@ header .overlay{
 .menu p {
     font-size: 26px;
     font-family: sans-serif;
-    color: greenyellow;
+    color: black;
 }
 
 .menu a {
@@ -108,33 +110,40 @@ p {
     /* background-color: green; */
     /* display: flex; */
     grid-area: main; /* <-------- why isnt it working?*/
- 
+    align-items: center;
+    background-color: orange;
 }
 
 .main li {
     font-size: 18px;
     list-style: none;
-    color: white;
+    color: black;
     align-content: center;    
 }
 
 .main p {
-    color: greenyellow;
+    color: black;
     font-family: sans-serif;
     font-size: 20px;
-    text-decoration: orange;  
+    text-decoration: none; 
+    display: grid;
+    grid-area: 
+    "ads"
+    ;
 }
 
 .main h2 {
-    color: white;
+    color: black;
     font-family: sans-serif;
     font-size: 30px;
+    justify-items: center;
 }
 
-#guiness {
-    height: 200px;
-    width: 200px;
-    justify-content: center;
+#donate {
+    height: 320px;
+    width: 600px;
+    align-content: center;
+        align-items: center;
 }
 
 /*---------------------------------*/
@@ -146,20 +155,20 @@ p {
     color: white;
 }
 
-#vets img {
+/* #vets img {
     height: 400px;
     width: 400px;
-}
+} */
 
-#kids img {
+/* #kids img {
     height: 100px;
     width: 200px;
-}
+} */
 
-#dogs img {
+/* #dogs img {
     height: 120px;
     width: 400px;
-}
+} */
 
 /*---------------------------------*/
 .sponsors{
@@ -168,7 +177,9 @@ p {
    grid-template-rows: repeat(7, 1fr);
    justify-items: center;
    justify-content: space-evenly;
-   height: 100%;
+   height: 100px;
+
+   background-color: blue;
 
 }
 .sponsors div > h3 {
@@ -226,7 +237,7 @@ p {
 /*---------------------------------*/
 footer {
     display: grid;
-    background-color: BLUE;
+    background-color: green;
     grid-area: footer;
 }
 

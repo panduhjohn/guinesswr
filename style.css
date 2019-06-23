@@ -22,7 +22,7 @@ body {
      
 }
 header {
-    background: url('/assets/flagheader.jpg');
+    background: url('/assets/flyby.jpg');
     text-align: center;
     font-size: 40px;
     font-family: cursive;
@@ -56,9 +56,11 @@ header .overlay{
     display: grid;
     /* background-color: aqua; */
     grid-template-areas:
+    "header header header header"
     "left main main right"
     "left main main right"
     "left main main right"
+    "footer footer footer footer"
     ; 
     height: 1100px;
     overflow: none;
@@ -111,7 +113,8 @@ p {
     /* display: flex; */
     grid-area: main; /* <-------- why isnt it working?*/
     align-items: center;
-    background-color: orange;
+    /* background-color: orange; */
+    text-align: center;
 }
 
 .main li {
@@ -143,7 +146,8 @@ p {
     height: 320px;
     width: 600px;
     align-content: center;
-        align-items: center;
+    align-items: center;
+    justify-content: center;
 }
 
 /*---------------------------------*/
